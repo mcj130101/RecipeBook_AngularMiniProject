@@ -5,8 +5,10 @@ import { throwError, BehaviorSubject } from 'rxjs';
 
 import { User } from './user.model';
 import { Router } from '@angular/router';
+import { API_KEY as ak } from 'environment/api';
 
-const API_KEY = 'AIzaSyBILfdLaSumHiFtC0z1BVNvTQ1heb683s4';
+
+const API_KEY = ak;
 
 export interface AuthResponseData {
   kind: string;
